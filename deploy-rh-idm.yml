@@ -1,5 +1,8 @@
 ---
 - name: Deploy Red Hat Identity Management Server
   become: yes
+
+  tasks:
+  - debug: msg=Starting playbook
   role:
     - role: fsw-deploy-idm-server
