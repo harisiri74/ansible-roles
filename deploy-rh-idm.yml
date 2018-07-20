@@ -1,0 +1,5 @@
+---
+- name: Deploy Red Hat Identity Management Server
+  become: yes
+  role:
+    - role: fsw-deploy-idm-server
